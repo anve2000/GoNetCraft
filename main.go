@@ -10,11 +10,11 @@ func main(){
 	resp, err:=http.Get("http://google.com");
 	if(err!=nil){
 		fmt.Println("err ", err);
-		os.Exit(1)
+		// os.Exit(1)
 	}
 
-	bs:=make([]byte, 99999);
-	resp.Body.Read(bs);
-	fmt.Println(string(bs));
+	// bs:=make([]byte, 99999);
+	// resp.Body.Read(bs);
+	// fmt.Println(string(bs));
 	fmt.Println("Resp ", resp);
 }
